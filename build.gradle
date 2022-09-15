@@ -1,0 +1,32 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.4-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id "io.freefair.lombok" version "6.4.3"
+	id 'java'
+}
+
+group = 'jrsperry'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.neo4j:neo4j-ogm-core:3.2.37'
+	implementation 'org.neo4j:neo4j-ogm-bolt-driver:3.2.37' // Only add if you're using the Bolt driver
+
+
+
+	testImplementation "org.testcontainers:testcontainers:1.16.3"
+	testImplementation 'org.testcontainers:neo4j:1.16.3'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
