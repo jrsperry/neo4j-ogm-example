@@ -2,13 +2,14 @@ package jrsperry.neo4jexamples;
 
 import lombok.extern.slf4j.Slf4j;
 import org.testcontainers.containers.Neo4jContainer;
+
 import java.time.Duration;
 
 @Slf4j
-public abstract class ContainerBaseTest {
+public abstract class ContainerBaseTest5 {
     static final Neo4jContainer NEO4J_CONTAINER;
     private static final String DOCKER_REGISTRY = "";
-    private static final String DOCKER_IMAGE = "neo4j:4.4.12";
+    private static final String DOCKER_IMAGE = "neo4j:5.1.0";
 
 
 

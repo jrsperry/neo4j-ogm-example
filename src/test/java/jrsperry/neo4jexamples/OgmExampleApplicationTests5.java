@@ -12,13 +12,11 @@ import java.util.stream.IntStream;
 
 @Slf4j
 @SpringBootTest
-class OgmExampleApplicationTests extends ContainerBaseTest {
-	// this tests against a neo4j 4 container
+class OgmExampleApplicationTests5 extends ContainerBaseTest5 {
+	// This tests against a neo4j 5 container
 
 	@Autowired
 	SessionFactory sessionFactory;
-
-
 
 	@Test
 	void contextLoads() {
