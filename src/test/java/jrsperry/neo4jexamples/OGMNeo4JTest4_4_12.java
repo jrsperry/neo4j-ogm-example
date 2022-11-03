@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 
 @Slf4j
 @SpringBootTest
-class OgmExampleApplicationTests extends ContainerBaseTest {
+class OGMNeo4JTest4_4_12 extends ContainerBaseTest4_4_12 {
 	// this tests against a neo4j 4 container
 
 	@Autowired
