@@ -25,7 +25,7 @@ class OGMNeo4JTest5_1_0 extends ContainerBaseTest5_1_0 {
 	@Test
 	void loadTest() {
 		// load some people in, warm up
-		IntStream.range(0, 50).forEach(i -> {
+		IntStream.range(0, 100).forEach(i -> {
 			Person person = complexPerson("johnny", i);
 			sessionFactory.openSession().save(person);
 		});
